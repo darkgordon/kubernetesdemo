@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: helloworld-pyth
-      image: 13455/benjamin:pytest
+      image: 13455/python:1.0
       ports:
         - containerPort: 5003

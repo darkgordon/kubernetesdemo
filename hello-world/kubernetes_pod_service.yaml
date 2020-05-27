@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pod-python-service
+spec:
+  selector:
+    name: python
+  ports:
+    - name: python-port
+      port: 30048
+      targetPort: 5003
+  type: NodePort
+
+

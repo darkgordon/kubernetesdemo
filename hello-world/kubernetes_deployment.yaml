@@ -1,6 +1,11 @@
---definicion del despliegue 
 apiVersion: v1
---que es lo que quiero hacer seria un despliegue
-Kind: Deployment
+kind: Deployment
 metadata:
-    name: python_desplieuge
+  name: python-deployment
+  labels:
+    name: python
+spec:
+  selector:
+    name: python
+  replicas: 3
+
