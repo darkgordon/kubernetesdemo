@@ -1,0 +1,6 @@
+--definicion del despliegue 
+apiVersion: v1
+--que es lo que quiero hacer seria un despliegue
+Kind: Deployment
+metadata:
+    name: python_desplieuge

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-python
+  labels:
+    name: python
+spec:
+  containers:
+    - name: helloworld-pyth
+      image: 13455/benjamin:pytest
+      ports:
+        - containerPort: 5003
